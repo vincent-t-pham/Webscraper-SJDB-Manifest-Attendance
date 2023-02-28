@@ -7,7 +7,7 @@
 1. Download selected file (may need additional permission)
 2. Locate .exe file location and run
 3. A console will request username, login and event page link
-4. Enter fields and wait for process to complete -- quickly copy output
+4. Enter fields and wait for process to complete, output
 
 **Installation Steps (pictures):**
 1. Download selected file (may need additional permission)
