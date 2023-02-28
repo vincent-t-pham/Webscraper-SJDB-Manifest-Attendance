@@ -3,11 +3,11 @@
  
 <img src="https://user-images.githubusercontent.com/59778724/221741184-53a68b25-82ff-482a-a7c0-9ea900bdb236.png" width="100">
 
-**Installation Steps (no pictures):**
-1. Download selected file (may need additional permission)
-2. Locate .exe file location and run
-3. A console will request username, login and event page link
-4. Enter fields and wait for process to complete, output
+**Simple Installation Steps (no pictures):**
+1. Download the .exe file (may need additional permission)
+2. Run it
+3. Input login, password, and which FB event
+4. Wait for outputs
 
 **Installation Steps (pictures):**
 1. Download selected file (may need additional permission)
