@@ -20,9 +20,9 @@ desired_cap.update({
   'os_version': '10'
 })
 
-loginPhone = input("Enter your username: ")
-myPassword=getpass.getpass()
-eventPage = input("Input link for the event: ")
+loginPhone = input("INPUT | Facebook Username: ")
+myPassword=getpass.getpass(prompt='INPUT | Facebook Password: ')
+eventPage = input("INPUT | Link to event: ")
 
 # PATH = 'C:\Users\Vincent Pham\Downloads\chromedriver_win32'
 driver = webdriver.Chrome("chromedriver.exe", desired_capabilities=desired_cap)
@@ -47,21 +47,20 @@ driver.get(eventPage)
 sleep(2)
 webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 
-print("Clicking list")
 openlist = driver.find_element(By.XPATH, '//div[@class="x1d52u69 x1pi30zi x1swvt13"]')
 openlist.click()
 
 sleep(2)
-print("Printing List")
 friendXPath = '//a[@class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz xt0b8zv xzsf02u x1s688f"]'
 friends = driver.find_elements(By.XPATH, friendXPath)
 del friends[0:2]
 
+print("Attendanees: ")
 for f in friends:
     print(f.text)
-print("Printing end")
 sleep(2)
 driver.quit()
+done = input("\nEnter any key when done")
 
 
 # myProfile = driver.find_element(By.XPATH,"//input[@aria-label='Search Facebook']")
