@@ -1,5 +1,5 @@
 # Webscraper-SJDB-Manifest-Attendance 
- **Text extract Facebook Event page attendees:**
+ **Text extract Facebook Event page attendees:** Compiled with pyinstall, utilized selenium
  
 <img src="https://user-images.githubusercontent.com/59778724/221741184-53a68b25-82ff-482a-a7c0-9ea900bdb236.png" width="100">
 
