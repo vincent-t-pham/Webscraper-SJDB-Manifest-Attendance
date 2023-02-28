@@ -7,9 +7,6 @@ from selenium.webdriver.chrome.options import Options
 import getpass
 from time import sleep
 
-# print("enter pass")
-# myPassword = input()
-
 # 0 - Default, 1 - Allow, 2 - Block
 chrome_options = Options()
 chrome_options.add_experimental_option("prefs", { "profile.default_content_setting_values.notifications": 1})
@@ -24,12 +21,9 @@ loginPhone = input("INPUT | Facebook Username: ")
 myPassword=getpass.getpass(prompt='INPUT | Facebook Password: ')
 eventPage = input("INPUT | Link to event: ")
 
-# PATH = 'C:\Users\Vincent Pham\Downloads\chromedriver_win32'
 driver = webdriver.Chrome("chromedriver.exe", desired_capabilities=desired_cap)
 driver.get("https://www.facebook.com/")
 driver.maximize_window()
-
-# loginPhone = "4088332530"
 
 username = driver.find_element(By.XPATH,"//input[@type='text']")
 username.send_keys(loginPhone)
@@ -39,9 +33,7 @@ password.send_keys(myPassword)
 
 loginButton = driver.find_element(By.XPATH,"//button[@type='submit']")
 loginButton.click()
-# sleep(10)
-# driver.find_element_by_xpath("//body/main[1]/p[3]/input[1]").click()
-sleep(10)
+sleep(7)
 
 driver.get(eventPage)
 sleep(2)
